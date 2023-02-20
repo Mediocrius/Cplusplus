@@ -1,10 +1,8 @@
-#include <iostream>
+#include "header.hpp"
+#ifndef func_header
+#define func_header FunctionHeader
 
-using std::cout;
-using std::cin;
-
-int main(){
-    
+void sizes_of_int_t_types(){
     int64_t int64_t{};
     uint64_t uint64_t{};
     int32_t int32_t{};
@@ -22,8 +20,8 @@ int main(){
     cout<<"size of uint16_t "<<sizeof(uint16_t)<<" bytes\n";
     cout<<"size of int8_t " <<sizeof(int8_t)<<" bytes\n";
     cout<<"size of uint8_t " <<sizeof(uint8_t)<<" bytes\n";
-
-
-    
-    return 0;
 }
+
+
+
+#endif
