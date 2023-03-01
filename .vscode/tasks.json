@@ -3,14 +3,14 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "D:\\mingw64\\bin\\g++.exe",
+            "command": "C:\\mingw64\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "-std=c++20",
                 "${file}",
                 "-o",
-                "C:\\Users\\Kancelaria PC.DESKTOP-8C2K2RG\\Desktop\\CS\\c++\\Cplusplus\\rooster.exe"
+                "C:\\Users\\VanoKhazalashvili\\Desktop\\Cplusplus\\rooster.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
