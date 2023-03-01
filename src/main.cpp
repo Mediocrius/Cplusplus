@@ -7,9 +7,9 @@ int main(int argc, char** argv){
     cout<<"\n\n";
     sum_of_natural_numbers();
     cout<<"\n\n";
-    display_specific_amount_of_natural_numbers_and_their_sum();
+    //display_specific_amount_of_natural_numbers_and_their_sum();
     cout<<"\n\n";
-
+    long double max{9223372036854775807.9999999999999999999900001};
+    cout<<max+0.01<<"\n\n"<<argv;
     return 0;
-    
-}
+    }

@@ -18,17 +18,17 @@ void variable_type_sizes(){
     __int16 _int16{};
     __int32 _int32{};
     __int64 _int64{};
-
-
-
+    //normal int types
+    int normInteger{};
+    long int longInteger{};
+    unsigned int unsignedInteger{};
+    //chars
     char16_t char16t[] = { };
     char32_t char32t[] = { };
     unsigned char unsignedChar[] = { }; 
     char _char[] = { };
     wchar_t wChar_t[] = { }; 
     
-
-
     cout<<"size of int64_t "<<sizeof(int64_t)<<" bytes\n";
     cout<<"size of uint64_t "<<sizeof(uint64_t)<<" bytes\n";
     cout<<"size of int32_t "<<sizeof(int32_t)<<" bytes\n";
@@ -77,5 +77,6 @@ void display_specific_amount_of_natural_numbers_and_their_sum(){
     }
         cout<<"\n"<<x<<"\n";
 }
+
 bool range_checker(); //check if integer and return true if it is within 10, 100 or 200.
 #endif
