@@ -1,15 +1,19 @@
+/*
+personal reference for cplusplus from february 2023-present(march 2023).
+warning: if you want to add stuff document it well.
+*/
+
 #include "include/header.hpp"
 #include "include/func_header.hpp"
 
-int main(int argc, char** argv){
-    
-    variable_type_sizes();
+int main(){  
+    dataTypes vartypesize;
+    vartypesize.printTypeSizes();
     cout<<"\n\n";
-    sum_of_natural_numbers();
+    sum_of_natural_numbers();//simple excercies for loops
     cout<<"\n\n";
     //display_specific_amount_of_natural_numbers_and_their_sum();
     cout<<"\n\n";
-    long double max{9223372036854775807.9999999999999999999900001};
-    cout<<max+0.01<<"\n\n"<<argv;
+    
     return 0;
-    }
+}
