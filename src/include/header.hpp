@@ -14,6 +14,10 @@ using std::clog;
 using std::string;
 
 class dataTypes{
+    protected:
+
+    private:
+
     public:
         //initialization of types for size log
         /*
@@ -25,6 +29,7 @@ class dataTypes{
         int integer{};
         long int longInteger{};
         long long int longLongInteger{};
+        unsigned short int unsignedShortInt{};
         unsigned int unsignedInteger{};
         unsigned long int unsignedLongInteger{};
         unsigned long long int unsignedLongLongInteger{};
@@ -34,6 +39,7 @@ class dataTypes{
         long double longDouble{};
         //char
         char Char[0];
+        signed signedChar[0];
         unsigned char unsignedChar[0]; 
         //booleon
         bool bulioni;
@@ -56,8 +62,10 @@ class dataTypes{
         char32_t char32t[0];
         wchar_t wChar_t[0];
 
-        //type size printer
+        string string_{};
+        //printing functions
         void printTypeSizes();
+        void printMaxValues();
 };
 class language{
     //en.cppreference.com/

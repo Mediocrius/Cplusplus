@@ -17,16 +17,18 @@ void dataTypes::printTypeSizes(){
 
     cout//short, short int, int, long int, long long int
         <<szof<<"short "<<sizeof(Short)<<" bytes.\n"
-        <<szof<<"short int "<<sizeof(shortInteger)<<" bytes.\n"
+        <<szof<<"short int (same as short) "<<sizeof(shortInteger)<<" bytes.\n"
         <<szof<<"int "<<sizeof(integer)<<" bytes.\n"
         <<szof<<"long int "<<sizeof(longInteger)<<" bytes.\n"
         <<szof<<"long long int "<<sizeof(longLongInteger)<<" bytes.\n"
         <<" *Unsigned types*\n"
+        <<szof<<"unsigned short int "<<sizeof(unsignedShortInt)<<" bytes."
         <<szof<<"unsigned int "<<sizeof(unsignedInteger)<<" bytes.\n"
         <<szof<<"unsigned long int "<<sizeof(unsignedLongInteger)<<" bytes.\n"
         <<szof<<"unsigned long long int "<<sizeof(unsignedLongLongInteger)<<" bytes.\n"
-        <<szof<<"unsinged int "<<sizeof(unsignedInteger)<<" bytes.\n";
-    
+        <<szof<<"unsinged int "<<sizeof(unsignedInteger)<<" bytes.\n"
+        <<"\n *char types*\n"
+        <<szof<<"_char " <<sizeof(Char)<<" bytes.\n";
     cout<<"\n ** typedef integers **\n";
 
     cout
@@ -53,10 +55,19 @@ void dataTypes::printTypeSizes(){
         <<szof<<"char16_t " <<sizeof(char16_t)<<" bytes.\n"
         <<szof<<"char32_t " <<sizeof(char32_t)<<" bytes.\n"
         <<szof<<"unsigned char " <<sizeof(unsignedChar)<<" bytes.\n"
-        <<szof<<"_char " <<sizeof(Char)<<" bytes.\n"
         <<szof<<"wchar_t " <<sizeof(wChar_t)<<" bytes.\n";
+    
+    cout<<szof<<"string "<<sizeof(string_)<<" bytes.\n";
 
     cout<<"\n End Of data type sizes.\n";
+}
+void dataTypes::printMaxValues(){
+    cout<<"\n **** max values of variables **** \n\n";
+
+    cout
+        <<" "
+        <<" "
+        <<" ";
 }
 void sum_of_natural_numbers(){
     int32_t sum{};

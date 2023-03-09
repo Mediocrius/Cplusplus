@@ -12,8 +12,8 @@ int main(){
     cout<<"\n\n";
     sum_of_natural_numbers();//simple excercies for loops
     cout<<"\n\n";
-    //display_specific_amount_of_natural_numbers_and_their_sum();
+    display_specific_amount_of_natural_numbers_and_their_sum();
     cout<<"\n\n";
     
     return 0;
-}
+} 
