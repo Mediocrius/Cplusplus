@@ -6,6 +6,14 @@
 #include <vector>
 #include <math.h>
 #include <limits.h>
+#include <chrono>
+#include <cstdlib>
+
+using std::rand;
+
+using std::chrono::high_resolution_clock;
+using std::chrono::duration_cast;
+using std::chrono::microseconds;
 
 using std::cout;
 using std::cin;

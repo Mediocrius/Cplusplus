@@ -7,13 +7,23 @@ warning: if you want to add stuff document it well.
 #include "include/func_header.hpp"
 
 int main(){  
+    auto start = high_resolution_clock::now();//prog timer 
     dataTypes vartypesize;
     vartypesize.printTypeSizes();
     cout<<"\n\n";
     sum_of_natural_numbers();//simple excercies for loops
     cout<<"\n\n";
-    display_specific_amount_of_natural_numbers_and_their_sum();
+    sortingFunction();
+    cout<<"\n\n";
+
     cout<<"\n\n";
     
+    
+    
+    
+    auto stop = high_resolution_clock::now();//stop prog timer
+    auto duration = duration_cast<microseconds>(stop - start);//calculate prog timer
+    cout <<"\n"<< duration.count()/1000000.0 << " seconds\n";//output prog run time in seconds
+    quit_or_keep();
     return 0;
 } 
