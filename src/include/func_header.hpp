@@ -76,27 +76,42 @@ void sum_of_natural_numbers(){
     }
     cout<<"Sum of Natural Numbers: "<<sum;
 }
-void display_specific_amount_of_natural_numbers_and_their_sum(){
-    int x{}, j{}, i{};
-    int natural_numbers_array[10] = {1,2,3,4,5,6,7,8,9,10};
-    cout<<"how many natural numbers should we display? ";
-    cin>>x;
-
-    if(x > 0 && x <= 10){
-        for(j; j < x; j++ && std::isdigit(x) == true){
-            cout<<natural_numbers_array[j]<<" ";
+void sortingFunction(){
+    int inputArray[200];
+    int temp{};
+        cout<<"\narray to be sorted: \n";
+    for(int i = 0; i < 200; i++){
+        inputArray[i] = rand() % 200 + 1;
+        cout<<"["<<inputArray[i]<<"] ";
+    }
+    for(int i = 0; i < 200; i++){
+        for(int j = i+1; j<200; j++){
+            if(inputArray[j] < inputArray[i]){
+                temp = inputArray[i];
+                inputArray[i] = inputArray[j];
+                inputArray[j] = temp;
             }
         }
-    else if(std::isdigit(x) == false){
-        cout<<"wrong. enter numbers between 1 and 10 ";
-        display_specific_amount_of_natural_numbers_and_their_sum();
     }
-    for(i; i < x; i++){
-        int sum{};
-        sum = sum += x;
+        cout<<"\n\nsorted array: \n";
+    for(int o = 0; o < 200; o++){
+        cout<<"["<<inputArray[o]<<"]\t";
     }
-        cout<<"\n"<<x<<"\n";
+}
+void quit_or_keep(){
+    string answer;
+    cout<<"quit or keep? Y/N? ";
+    std::getline(cin, answer);
+    if(answer == "y" || answer == "Y" || answer == "yes" ||answer == "YES" || answer == "Yes"){
+        exit(0);
+    }
+    else if(answer == "n" || answer == "N" || answer == "no" || answer == "No" || answer == "NO"){
+        cin>>answer;
+    }
+    else{
+        cout<<"enter valid answer: ";
+        cin>>answer;
+    }
 }
 
-bool range_checker(); //check if integer and return true if it is within 10, 100 or 200.
 #endif
