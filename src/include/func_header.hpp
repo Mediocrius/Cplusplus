@@ -77,15 +77,15 @@ void sum_of_natural_numbers(){
     cout<<"Sum of Natural Numbers: "<<sum;
 }
 void sortingFunction(){
-    int inputArray[1000];
+    int inputArray[200];
     int temp{};
         cout<<"\narray to be sorted: \n";
-    for(int i = 0; i < 1000; i++){
-        inputArray[i] = rand() % 1000 + 1;
+    for(int i = 0; i < 200; i++){
+        inputArray[i] = rand() % 200 + 1;
         cout<<"["<<inputArray[i]<<"] ";
     }
-    for(int i = 0; i < 1000; i++){
-        for(int j = i+1; j<1000; j++){
+    for(int i = 0; i < 200; i++){
+        for(int j = i+1; j<200; j++){
             if(inputArray[j] < inputArray[i]){
                 temp = inputArray[i];
                 inputArray[i] = inputArray[j];
@@ -93,9 +93,9 @@ void sortingFunction(){
             }
         }
     }
-        cout<<"\nsorted array: \n";
-    for(int o = 0; o < 1000; o++){
-        cout<<inputArray[o]<<"\t";
+        cout<<"\n\nsorted array: \n";
+    for(int o = 0; o < 200; o++){
+        cout<<"["<<inputArray[o]<<"]\t";
     }
 }
 void quit_or_keep(){

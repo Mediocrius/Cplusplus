@@ -21,6 +21,8 @@ using std::cerr;
 using std::clog;
 using std::string;
 
+const double million = 1000000.0;
+
 class dataTypes{
     protected:
 
